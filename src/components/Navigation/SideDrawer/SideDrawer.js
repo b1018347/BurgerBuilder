@@ -6,12 +6,10 @@ import Backdrop from '../../UI/Backdrop/Backdrop';
 import Aux from '../../../hoc/Aux';
 
 const sideDrawer = (props) => {
-    console.log(props.open);
     let attachedClasses = [classes.SideDrawer, classes.Closed];
     if(props.open) {
         attachedClasses = [classes.SideDrawer, classes.Open];
     }
-    console.log(attachedClasses);
     return (
         <Aux>
             <Backdrop show={props.open} clicked={props.closed} />
